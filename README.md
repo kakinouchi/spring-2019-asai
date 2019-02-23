@@ -7,10 +7,11 @@
  1. opam init
  1. - opam install merlin(コード補完ツール?)  
     - opam install dune(ビルドツール)  
-    - opam install ocamlformat(フォーマッタ)  
+    - opam install ocamlformat(フォーマッタ) 
+    - opam install ocp-indent(format on save for OCaml in VSCode cf:https://github.com/reasonml-editor/vscode-reasonml/issues/247) 
 
  - ビルドツールは最近は dune が良さそう。(デファクトスタンダードになりそう?)
- - VSCode のプラグイン:[OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml)が調子悪かったが、VSCode を何回か再起動したら直った(?)
+ - VSCode のプラグイン:[OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml)で Connection got disposed というエラーが出てたが、ocp-indent を入れたら直った(https://github.com/reasonml-editor/vscode-reasonml/issues/247)
 
 ## dune メモ
  - 開発者(?)による[解説動画](https://www.youtube.com/watch?v=6SXelt7pRmY)が良かった
