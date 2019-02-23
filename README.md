@@ -5,9 +5,9 @@
 ## 環境構築メモ
  1. brew install opam
  1. opam init
- 1. - opam install merlin  
-    - opam install dune  
-    - opam install ocamlformat  
+ 1. - opam install merlin(コード補完ツール?)  
+    - opam install dune(ビルドツール)  
+    - opam install ocamlformat(フォーマッタ)  
 
  - ビルドツールは最近は dune が良さそう。(デファクトスタンダードになりそう?)
  - VSCode のプラグイン:[OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml)が調子悪かったが、VSCode を何回か再起動したら直った(?)
