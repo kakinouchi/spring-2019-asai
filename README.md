@@ -20,18 +20,23 @@
 
 例：
 ```
-$ls
+$ ls
 README.md	dune		hello_world.ml
-$cat dune
+
+$ cat dune
 (executable
  (name hello_world))
-$cat hello_world.ml
+
+$ cat hello_world.ml
 print_endline "hello, world!"
-$dune build hello_world.exe
+
+$ dune build hello_world.exe
 Info: creating file dune-project with this contents:
 | (lang dune 1.7)
-$ls
+
+$ ls
 README.md	_build		dune		dune-project	hello_world.ml
-$dune exec ./hello_world.exe
+
+$ dune exec ./hello_world.exe
 hello, world!
 ```
