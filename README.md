@@ -18,3 +18,20 @@
  - cross platforms
  - [公式のquick start](https://dune.readthedocs.io/en/latest/quick-start.html)にあるように、1.`dune`ファイルを作って2行ほど書き、2.`dune build`コマンドを叩けば(cross platformな)実行ファイルが出来上がる。3.実行ファイルは`dune exec ./hello_world.exe` で実行できる。
 
+例：
+```
+$ls
+README.md	dune		hello_world.ml
+$cat dune
+(executable
+ (name hello_world))
+$cat hello_world.ml
+print_endline "hello, world!"
+$dune build hello_world.exe
+Info: creating file dune-project with this contents:
+| (lang dune 1.7)
+$ls
+README.md	_build		dune		dune-project	hello_world.ml
+$dune exec ./hello_world.exe
+hello, world!
+```
