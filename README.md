@@ -2,15 +2,16 @@
 [『プログラミングの基礎(浅井健一)』(サイエンス社)](http://www.saiensu.co.jp/?page=book_details&ISBN=ISBN978-4-7819-1160-1)の写経レポジトリ  
 1.関数型プログラミングに慣れたい・2.テストをちゃんと書けるようにしたいという動機で読み始めた。アルゴリズムの練習にもなりそう。
 
-## 環境構築メモ
+## 環境構築メモ(2019/02/23)
  1. brew install opam
  1. opam init
  1. - opam install merlin(コード補完ツール?)  
     - opam install dune(ビルドツール)  
-    - opam install ocamlformat(フォーマッタ)  
+    - opam install ocamlformat(フォーマッタ) 
+    - opam install ocp-indent(format on save for OCaml in VSCode cf:https://github.com/reasonml-editor/vscode-reasonml/issues/247) 
 
  - ビルドツールは最近は dune が良さそう。(デファクトスタンダードになりそう?)
- - VSCode のプラグイン:[OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml)が調子悪かったが、VSCode を何回か再起動したら直った(?)
+ - VSCode のプラグイン:[OCaml and Reason IDE](https://marketplace.visualstudio.com/items?itemName=freebroccolo.reasonml)で Connection got disposed というエラーが出てたが、ocp-indent を入れたら直った(https://github.com/reasonml-editor/vscode-reasonml/issues/247)
 
 ## dune メモ
  - 開発者(?)による[解説動画](https://www.youtube.com/watch?v=6SXelt7pRmY)が良かった
