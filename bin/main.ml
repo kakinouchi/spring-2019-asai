@@ -1,2 +1,5 @@
+open Lib
+
 let () =
-  print_endline "hello, world!"
+  let result = Mymath.add 2 189 in
+  print_endline (string_of_int result)
