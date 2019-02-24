@@ -43,3 +43,4 @@ hello, world!
 ```
 
  - duneおよびOCamlのディレクトリ構成の慣習については[この記事](https://medium.com/@bobbypriambodo/starting-an-ocaml-app-project-using-dune-d4f74e291de8)が非常に参考になった。
+ - test もbinやlibと同様、dune ファイルを[このように](https://github.com/kakinouchi/spring-2019/pull/3/commits/6cc63e41ae45da5b15da18b0c97103b278a4bd82)書けばOK。[公式のquick start](https://jbuilder.readthedocs.io/en/latest/quick-start.html)にあるように`dune runtest`でテストをエントリポイントとして実行できる。
