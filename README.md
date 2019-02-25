@@ -17,7 +17,7 @@
  - 開発者(?)による[解説動画](https://www.youtube.com/watch?v=6SXelt7pRmY)が良かった
  - 読み方は dʒúːn のようだ(dúːn かと思った)
  - cross platforms
- - [公式のquick start](https://dune.readthedocs.io/en/latest/quick-start.html)にあるように、1.`dune`ファイルを作って2行ほど書き、2.`dune build`コマンドを叩けば(cross platformな)実行ファイルが出来上がる。3.実行ファイルは`dune exec ./hello_world.exe` で実行できる。
+ - [公式のquick start](https://dune.readthedocs.io/en/latest/quick-start.html)にあるように、1.`dune`ファイルを作って2行ほど書き、2.`dune build`コマンドを叩けば(cross platformな)実行ファイルが出来上がる。3.実行ファイルは`dune exec ./hello_world.exe` で実行できる。(なお、`dune exec` だけでビルド&&実行できる)
 
 例：
 ```
@@ -41,3 +41,6 @@ README.md	_build		dune		dune-project	hello_world.ml
 $ dune exec ./hello_world.exe
 hello, world!
 ```
+
+ - duneおよびOCamlのディレクトリ構成の慣習については[この記事](https://medium.com/@bobbypriambodo/starting-an-ocaml-app-project-using-dune-d4f74e291de8)が非常に参考になった。
+ - test もbinやlibと同様、dune ファイルを[このように](https://github.com/kakinouchi/spring-2019/pull/3/commits/6cc63e41ae45da5b15da18b0c97103b278a4bd82)書けばOK。[公式のquick start](https://jbuilder.readthedocs.io/en/latest/quick-start.html)にあるように`dune runtest`でテストをエントリポイントとして実行できる。
