@@ -1,2 +1,3 @@
 (test 
- (name my_test_program))
+ (name my_test_program)
+ (libraries lib))
